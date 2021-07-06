@@ -17,3 +17,6 @@ window.addEventListener('scroll', function(){
         }
     }
 } );*/
+swiper.on('hashSet', function () {
+    console.log('hashChanged');
+  });
