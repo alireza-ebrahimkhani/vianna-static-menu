@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
     </style>
@@ -112,57 +111,59 @@
             </div>
         </header>
         <nav class="nav" id="nav">
-            <ul class="nav_items">
-                <li class="nav_item ">
-                    <a href="#pizza">
-                        <img src="assets/pizza.svg" alt="" class="nav_iimg">
-                        <span class="nav_enText">pizza</span>
-                        <span class="nav_enText">پیتزا</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#sandwich">
-                        <img src="assets/sandwich.svg" alt="" class="nav_iimg">
-                        <span class="nav_enText">sandwich</span>
-                        <span class="nav_enText">ساندویچ</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#fried">
-                        <img src="assets/fried.svg" alt="" class="nav_iimg">
-                        <span class="nav_enText">fried</span>
-                        <span class="nav_enText">سوخاری</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#dishes">
-                        <img src="assets/dishes.svg" alt="" class="nav_iimg">
-                        <span class="nav_enText">dishes</span>
-                        <span class="nav_enText">بشقاب‌ها</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#burger">
-                        <img src="assets/burger.svg" alt="" class="nav_iimg">
-                        <span class="nav_enText">burger</span>
-                        <span class="nav_enText">برگر</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#appetizer">
-                        <img src="assets/appetizer.svg" alt="" class="nav_iimg">
-                        <span class="nav_enText">appetizer</span>
-                        <span class="nav_enText">پیش‌غذا</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#dirnk">
-                        <img src="assets/drik.svg" alt="" class="nav_iimg">
-                        <span class="nav_enText">dirnk</span>
-                        <span class="nav_enText">نوشیدنی</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-hash="pizza">
+                        <a >
+                            <img src="assets/pizza.svg" alt="" class="swiper-img">
+                            <span class="swiper-enText">pizza</span>
+                            <span class="swiper-enText">پیتزا</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" data-hash="sandwich">
+                        <a >
+                            <img src="assets/sandwich.svg" alt="" class="swiper-img">
+                            <span class="swiper-enText">sandwich</span>
+                            <span class="swiper-enText">ساندویچ</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" data-hash="fried">
+                        <a >
+                            <img src="assets/fried.svg" alt="" class="swiper-img">
+                            <span class="swiper-enText">fried</span>
+                            <span class="swiper-enText">سوخاری</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" data-hash="dishes">
+                        <a >
+                            <img src="assets/dishes.svg" alt="" class="swiper-img">
+                            <span class="swiper-enText">dishes</span>
+                            <span class="swiper-enText">بشقاب‌ها</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" data-hash="burger">
+                        <a >
+                            <img src="assets/burger.svg" alt="" class="swiper-img">
+                            <span class="swiper-enText">burger</span>
+                            <span class="swiper-enText">برگر</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" data-hash="appetizer">
+                        <a >
+                            <img src="assets/appetizer.svg" alt="" class="swiper-img">
+                            <span class="swiper-enText">appetizer</span>
+                            <span class="swiper-enText">پیش‌غذا</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" data-hash="dirnk">
+                        <a >
+                            <img src="assets/drik.svg" alt="" class="swiper-img">
+                            <span class="swiper-enText">dirnk</span>
+                            <span class="swiper-enText">نوشیدنی</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </nav>
         <main class="content">
             <section class="cat" id="pizza" data-link="#pizza">
@@ -198,7 +199,7 @@
             slideToClickedSlide: true,
             hashNavigation: true,
             //loop:true,
-            //checkOverflow:true,
+            checkOverflow:true,
         });
         
     </script>
