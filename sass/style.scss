@@ -85,7 +85,11 @@ h1{
       &-slide{
           height:unset !important;
       }
-      
+      &-slide-active{
+        min-width: 96px;
+        background-color: darken($basil , 5%);
+        border-radius: 1rem;;
+      }
       &-wrapper{
       }
       &-slide a{
