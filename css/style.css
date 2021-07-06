@@ -90,12 +90,6 @@ h1 {
   height: unset !important;
 }
 
-.swiper-slide-active {
-  min-width: 96px;
-  background-color: #308361;
-  border-radius: 1rem;
-}
-
 .swiper-slide a {
   display: -ms-grid;
   display: grid;
