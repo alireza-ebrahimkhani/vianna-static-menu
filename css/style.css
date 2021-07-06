@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 8px;
+}
+
+/*
+::-webkit-scrollbar {
+    width: .5rem;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background :$lemon;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb {
+    background: $darkBasil;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $orange; 
+}
+*/
+body {
+  background-color: black;
+}
+
+.mainBody {
+  max-width: 600px;
+  width: 100%;
+  background-color: #FFFBE6;
+  margin: 0 auto;
+  position: relative;
+}
+
+section.cat {
+  height: 100vh;
+}
+
+.header_logo {
+  padding: 3rem;
+  background-color: #37966F;
+  position: relative;
+}
+
+.header--extraPadd {
+  padding-bottom: 96px;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: #29584A;
+  text-align: center;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  background-color: #37966F;
+  width: 100%;
+  max-width: 600px;
+  overflow: auto;
+  display: block;
+}
+
+.nav_items {
+  white-space: nowrap;
+  margin: 1rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 2rem 0;
+  background-color: #37966F;
+}
+
+.nav_items_item {
+  width: 22%;
+  display: inline-block;
+  border-radius: 1rem;
+}
+
+.nav_items_item:not(:first-child) {
+  margin-left: -2px;
+}
+
+.nav_items_item:first-child {
+  margin-left: 1rem;
+}
+
+.nav_items_item:last-child {
+  margin-right: 1rem;
+}
+
+.nav_items_item a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  color: #FFFBE6;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+.nav_items_item--active {
+  background-color: #308361;
+}
+
+.nav_items_itemImg {
+  width: 6rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: 1rem;
+}
+
+.nav_items_itemEnText {
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: block;
+}
+
+main.content {
+  padding: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
