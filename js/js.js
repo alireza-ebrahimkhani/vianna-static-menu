@@ -9,7 +9,7 @@ window.addEventListener('scroll', function(){
             let slideLink = document.querySelectorAll('.swiper-slide a');
             slideLink.forEach(thisSlideLink => {
                 if (thisSlideLink.attributes.href.value == goTo ) {
-                        swiper.slideTo(i,1000, false);
+                        swiper.slideTo(i,500, false);
                 }
             })
         } else {
