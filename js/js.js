@@ -1,4 +1,4 @@
-let cat_section = document.querySelectorAll(".cat");
+/*let cat_section = document.querySelectorAll(".cat");
 window.addEventListener('scroll', function(){
     let nowScroll = window.pageYOffset;
     for (let i = 0; i < cat_section.length; i++) {
@@ -16,4 +16,4 @@ window.addEventListener('scroll', function(){
             continue;
         }
     }
-} );
+} );*/
