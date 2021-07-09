@@ -1,9 +1,11 @@
 let cat_section = document.querySelectorAll(".cat");
 window.addEventListener('scroll', function(){
+    setTimeout(function(){
     let nowScroll = window.pageYOffset;
+
     for (let i = 0; i < cat_section.length; i++) {
         let secStart = cat_section[i].offsetTop;
-        let secEnd = cat_section[i].scrollHeight + cat_section[i].offsetTop;
+        let secEnd = cat_section[i].scrollHeight/2 + cat_section[i].offsetTop;
         if (nowScroll > secStart && nowScroll < secEnd) {
             let goTo = cat_section[i].dataset.link;
             let slideLink = document.querySelectorAll('.swiper-slide a');
@@ -16,4 +18,5 @@ window.addEventListener('scroll', function(){
             continue;
         }
     }
-} ,10);
+
+}) ,10});
