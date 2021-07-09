@@ -49,8 +49,8 @@ section.cat{
 }
 .header{
     &_logo{
+        fill: $darkBasil;
         padding: 3rem;
-        background-color: $basil;
         position: relative;
     }
     &--extraPadd{
@@ -63,6 +63,9 @@ h1{
     text-transform: uppercase;
     color: $darkBasil;
     text-align: center;
+    border-top: 2px solid $basil;
+    border-bottom: 2px solid $basil;
+    padding: 2rem 0;
     &::before{
         height: 20rem;
         display: block;
@@ -70,6 +73,12 @@ h1{
         margin-top: -20rem;
         visibility: hidden;
     }
+}
+.navContainer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 600px;
 }
 .nav::-webkit-scrollbar {
     display: none;
@@ -123,59 +132,7 @@ h1{
         display: block;
     }
   }
-  /*
-.nav{
-    background-color: $basil;
-    width: 100%;
-    max-width: 600px;
-    overflow: auto;
-    display: block;
-    &_items {
-    white-space: nowrap;
-    margin: 1rem 0;
-    }
-    &_item {
-        width:22%;
-        display: inline-block;
-        border-radius: 1rem;
-    }
-    &_item:not(:first-child) {
-        margin-left: -2px;
-    }
-    &_item:first-child {
-        margin-left: 1rem;
-    }
-    &_item:last-child {
-        margin-right: 1rem;
-    }
-    &_item a{
-        display: grid;
-        grid-template-rows: auto auto auto;
-        color: $lemon;
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 1rem;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-    }
-    &_item--active{
-        background-color: darken($basil , 5%);
-    }
-    &_itemImg{
-        width: 6rem;
-        justify-self: center;
-        margin-bottom: 1rem;
-    }
-    &_itemEnText{
-        font-family: 'Roboto Slab', serif;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        display: block;
-    }
-}
-*/
+  
 main.content{
     padding:3rem;
 }
