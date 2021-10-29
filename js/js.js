@@ -10,10 +10,12 @@ window.addEventListener('scroll', function(){
         let secStart = cat_section[i].offsetTop;
         let secEnd = cat_section[i].scrollHeight/2 + cat_section[i].offsetTop;
         if (nowScroll > secStart && nowScroll < secEnd) {
-            let goTo = cat_section[i].dataset.link;
+            //let goTo = cat_section[i].dataset.link;
+            let goTo = cat_section[i].id;
+            console.log(goTo)
             let slideLink = document.querySelectorAll('.swiper-slide a');
             slideLink.forEach(thisSlideLink => {
-                if (thisSlideLink.attributes.href.value == goTo) {
+                if (thisSlideLink.attributes.href.value = "#" + goTo) {
                         swiper.slideTo(i,500, false);
                         swiper.params.hashNavigation.enabled = false;
                 }
